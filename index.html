@@ -8,7 +8,7 @@
 <body>
 <h1>ADO.NET Specification Tests</h1>
 <div style='position: fixed; top: 0; right: 16px'>
-< h4>Legend</h4>
+<h4>Legend</h4>
 <table>
     <tr><td class='EXPECTED_RESULT'>expected result</td></tr>
     <tr><td class='WRONG_EXCEPTION'>exception was not of expected type</td></tr>
@@ -1327,7 +1327,8 @@ Actual:   ?"'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED
 -------- System.AggregateException : One or more errors occurred. (Connection refused 10.1.0.4:3306)
 ------------ System.Net.Internals.SocketExceptionFactory+ExtendedSocketException : Connection refused 10.1.0.4:3306"'></td><td class='WRONG_EXCEPTION' title="typeof(MySql.Data.MySqlClient.MySqlException): Unable to connect to any of the specified MySQL hosts.
 ---- MySql.Data.MySqlClient.MySqlException : Unable to connect to any of the specified MySQL hosts.
--------- System.Net.Sockets.SocketException : Connection refused"'></td><td></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Host can't be null
+-------- System.AggregateException : One or more errors occurred. (Connection refused 10.1.0.4:3306)
+------------ System.Net.Internals.SocketExceptionFactory+ExtendedSocketException : Connection refused 10.1.0.4:3306"'></td><td></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Host can't be null
 ---- System.ArgumentException : Host can't be null"'></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Host can't be null
 ---- System.ArgumentException : Host can't be null"'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Invalid ConnectionString format, cannot parse: string value to split cannot be null
 ---- System.ArgumentException : Invalid ConnectionString format, cannot parse: string value to split cannot be null"'></td></tr>
