@@ -49,6 +49,10 @@ th.space > div {
     width: 16px;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /*
  colors from https://www.pinterest.com/pin/479000110340670725/
  */
