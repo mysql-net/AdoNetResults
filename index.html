@@ -96,7 +96,7 @@ Actual:   server=localhost;port=3300;user id=root;p···
 <tr><td id='ConnectionString_setter_throws_when_open'><a href='#ConnectionString_setter_throws_when_open'>ConnectionString_setter_throws_when_open</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='WRONG_EXCEPTION' title="typeof(MySql.Data.MySqlClient.MySqlException): Not allowed to change the 'ConnectionString' property while the connection (state=Open).
 ---- MySql.Data.MySqlClient.MySqlException : Not allowed to change the 'ConnectionString' property while the connection (state=Open)."'></td><td class='WRONG_EXCEPTION' title="typeof(MySql.Data.MySqlClient.MySqlException): Not allowed to change the 'ConnectionString' property while the connection (state=Open).
 ---- MySql.Data.MySqlClient.MySqlException : Not allowed to change the 'ConnectionString' property while the connection (state=Open)."'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td></tr>
-<tr><td id='CreateCommand_does_not_set_Transaction_property'><a href='#CreateCommand_does_not_set_Transaction_property'>CreateCommand_does_not_set_Transaction_property</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='SHOULD_HAVE_PASSED' title="Assert.Null() Failure
+<tr><td id='CreateCommand_does_not_set_Transaction_property'><a href='#CreateCommand_does_not_set_Transaction_property'>CreateCommand_does_not_set_Transaction_property</a></td><td class='EXPECTED_RESULT'></td><td class='CRASH' title="System.InvalidOperationException : Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached."'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='SHOULD_HAVE_PASSED' title="Assert.Null() Failure
 Expected: (null)
 Actual:   SqliteTransaction { Connection = Microsoft.Data.Sqlite.SqliteConnection, Connection = Microsoft.Data.Sqlite.SqliteConnection, IsolationLevel = Serializable }"'></td><td class='SHOULD_HAVE_PASSED' title="Assert.Null() Failure
 Expected: (null)
@@ -1195,15 +1195,7 @@ Actual value was 1."'></td><td class='WRONG_EXCEPTION' title="typeof(System.Data
 another row available
 ---- System.Data.SQLite.SQLiteException : out of memory
 another row available"'></td></tr>
-<tr><td id='GetName_works'><a href='#GetName_works'>GetName_works</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='SHOULD_HAVE_PASSED' title="Assert.Equal() Failure
-          ↓ (pos 0)
-Expected: Id
-Actual:   id
-          ↑ (pos 0)"'></td><td class='SHOULD_HAVE_PASSED' title="Assert.Equal() Failure
-          ↓ (pos 0)
-Expected: Id
-Actual:   id
-          ↑ (pos 0)"'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td></tr>
+<tr><td id='GetName_works'><a href='#GetName_works'>GetName_works</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td></tr>
 <tr><td id='GetOrdinal_throws_when_out_of_range'><a href='#GetOrdinal_throws_when_out_of_range'>GetOrdinal_throws_when_out_of_range</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentOutOfRangeException): Exception of type 'System.ArgumentOutOfRangeException' was thrown.
 Parameter name: name
 Actual value was Name.
@@ -1331,7 +1323,7 @@ Actual:   ?"'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED
 ---- System.ArgumentException : Host can't be null"'></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Host can't be null
 ---- System.ArgumentException : Host can't be null"'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Invalid ConnectionString format, cannot parse: string value to split cannot be null
 ---- System.ArgumentException : Invalid ConnectionString format, cannot parse: string value to split cannot be null"'></td></tr>
-<tr><td id='Open_works'><a href='#Open_works'>Open_works</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='SHOULD_HAVE_PASSED' title="Assert.Equal() Failure
+<tr><td id='Open_works'><a href='#Open_works'>Open_works</a></td><td class='EXPECTED_RESULT'></td><td class='CRASH' title="System.InvalidOperationException : Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached."'></td><td></td><td class='EXPECTED_RESULT'></td><td class='SHOULD_HAVE_PASSED' title="Assert.Equal() Failure
 Expected: Connecting
 Actual:   Open"'></td><td class='SHOULD_HAVE_PASSED' title="Assert.Equal() Failure
 Expected: Connecting
