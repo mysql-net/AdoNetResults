@@ -2547,11 +2547,9 @@ Actual:   ?"'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED
 <tr><td id='Open_throws_when_no_connection_string'><a href='#Open_throws_when_no_connection_string'>Open_throws_when_no_connection_string</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='WRONG_EXCEPTION' title="typeof(MySqlConnector.MySqlException): Unable to connect to any of the specified MySQL hosts.
 ---- MySqlConnector.MySqlException : Unable to connect to any of the specified MySQL hosts."'></td><td class='WRONG_EXCEPTION' title="typeof(MySql.Data.MySqlClient.MySqlException): Unable to connect to any of the specified MySQL hosts.
 ---- MySql.Data.MySqlClient.MySqlException : Unable to connect to any of the specified MySQL hosts.
--------- System.AggregateException : One or more errors occurred. (Connection refused 10.1.0.4:3306)
------------- System.Net.Internals.SocketExceptionFactory+ExtendedSocketException : Connection refused 10.1.0.4:3306"'></td><td class='WRONG_EXCEPTION' title="typeof(MySql.Data.MySqlClient.MySqlException): Unable to connect to any of the specified MySQL hosts.
+-------- System.Net.Sockets.SocketException : Connection refused"'></td><td class='WRONG_EXCEPTION' title="typeof(MySql.Data.MySqlClient.MySqlException): Unable to connect to any of the specified MySQL hosts.
 ---- MySql.Data.MySqlClient.MySqlException : Unable to connect to any of the specified MySQL hosts.
--------- System.AggregateException : One or more errors occurred. (Connection refused 10.1.0.4:3306)
------------- System.Net.Internals.SocketExceptionFactory+ExtendedSocketException : Connection refused 10.1.0.4:3306"'></td><td></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Host can't be null
+-------- System.Net.Sockets.SocketException : Connection refused"'></td><td></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Host can't be null
 ---- System.ArgumentException : Host can't be null"'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='WRONG_EXCEPTION' title="typeof(System.ArgumentException): Invalid ConnectionString format, cannot parse: string value to split cannot be null
 ---- System.ArgumentException : Invalid ConnectionString format, cannot parse: string value to split cannot be null"'></td></tr>
 <tr><td id='Open_works'><a href='#Open_works'>Open_works</a></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td class='EXPECTED_RESULT'></td><td></td><td class='EXPECTED_RESULT'></td><td class='SHOULD_HAVE_PASSED' title="Assert.Equal() Failure
